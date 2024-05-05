@@ -14,7 +14,7 @@ const NoProject = ({ onStartAddProject }) => {
         select a project or get started with new one
       </p>
       <p>
-        <Button onClick={onStartAddProject}>Create new project</Button>
+        <Button onClick={onStartAddProject}>Create New Project</Button>
       </p>
     </div>
   );
