@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        customFont: ["Abel"],
+        AbelFont: ["Abel"],
       },
     },
   },

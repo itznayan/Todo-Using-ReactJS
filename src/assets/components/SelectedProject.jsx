@@ -1,6 +1,13 @@
 import React from "react";
+import Tasks from "./Tasks";
 
-const SelectedProject = ({ project }) => {
+const SelectedProject = ({
+  project,
+  onDelete,
+  onAddTask,
+  onDeleteTask,
+  tasks,
+}) => {
   const formattedDate = new Date(project.dueDate).toLocaleString("en-US", {
     year: "numeric",
     month: "short",
@@ -13,7 +20,10 @@ const SelectedProject = ({ project }) => {
           <h1 className="text-3xl font-bold text-stone-600 mb-2">
             {project.title}
           </h1>
-          <button className="text-stone-600 hover:text-stone-900 bg-slate-200 p-2 rounded-2xl hover:bg-slate-300 duration-700 border hover:shadow-xl border-slate-500">
+          <button
+            onClick={onDelete}
+            className="text-stone-600 hover:text-stone-900 bg-slate-200 p-2 rounded-2xl hover:bg-slate-300 duration-700 border hover:shadow-xl border-slate-500"
+          >
             Delete
           </button>
         </div>
@@ -22,6 +32,7 @@ const SelectedProject = ({ project }) => {
           {project.description}
         </p>
       </header>
+      <Tasks onAdd={onAddTask} onDelete={onDeleteTask} tasks={tasks} />
     </div>
   );
 };
