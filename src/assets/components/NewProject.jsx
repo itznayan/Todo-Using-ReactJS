@@ -36,7 +36,6 @@ const NewProject = ({ onAdd, onCancel }) => {
         <p className="py-1">You Forgot to enter value</p>
         <p className="py-1">Please Make Sure To Enter Every Value </p>
       </Modal>
-      /
       <div className="w-[35rem]  mt-16">
         <menu className="flex  items-center justify-end gap-6 my-4">
           <li>

@@ -13,12 +13,12 @@ const Modal = forwardRef(({ children, buttonCaption }, ref) => {
   });
   return createPortal(
     <dialog
-      className="backdrop:bg-stone-900/60 backdrop:backdrop-blur-[2px] p-4 rounded-xl border-black shadow-xl"
+      className="backdrop:bg-stone-900/60 backdrop:backdrop-blur-[2px] drop-shadow-xl p-4 rounded-xl border-black"
       ref={dialog}
     >
       {children}
       <form method="dialog">
-        <button className="py-1 px-4 text-gray-200 mt-2 rounded-lg  bg-stone-800  hover:bg-black duration-700">
+        <button className=" py-1 px-4 text-gray-200 mt-2 rounded-lg  bg-stone-800  hover:bg-black duration-700">
           {buttonCaption}
         </button>
       </form>

@@ -5,9 +5,9 @@ const NoProject = ({ onStartAddProject }) => {
   return (
     <div className="mt-24 text-center w-2/3">
       <img
-        src={noProjectImg}
+        src="https://cdn3d.iconscout.com/3d/premium/thumb/notes-4153376-3439385.png?f=webp"
         alt="An Empty task list"
-        className="size-16 object-contain mx-auto"
+        className="size-32 drop-shadow-xl object-contain mx-auto"
       />
       <h2 className="text-xl font-bold text-stone-500">No Project Selected</h2>
       <p className="text-stone-400 mb-4">
